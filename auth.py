@@ -4,8 +4,8 @@ from twilio.rest import Client
 
 
 
-endpoint ="https://api.openweathermap.org/data/2.5/forecast"
-api_key = "d56dfbc7a4bf5dd7b80264923753ac76"
+endpoint = os.environ['ENDPOINT_URL']
+api_key = os.environ['ENDPOINT_API_KEY']
 account_sid = os.environ['TWILIO_ACCOUNT_SID']
 auth_token = os.environ['TWILIO_AUTH_TOKEN']
 
@@ -14,8 +14,8 @@ auth_token = os.environ['TWILIO_AUTH_TOKEN']
 #ATWILLO_KEY2 =D816BF76VX95NTZEZMAXGZ5X
 
 parameters = {
-    "lat": 17.385044,
-    "lon": 78.486671,
+    "lat": 16.560909,
+    "lon": 81.519638,
     "appid": api_key,
 
 }
